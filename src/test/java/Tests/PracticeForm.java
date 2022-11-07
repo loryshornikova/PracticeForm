@@ -67,6 +67,7 @@ public class PracticeForm {
                     //text("Reading, Music"),
                     //text(currentAddress),
                     //text("NCR Delhi")
+            //);
 
 
             System.out.println("Successful test");

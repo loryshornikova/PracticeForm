@@ -9,6 +9,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.value;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.executeJavaScript;
+import java.io.File;
 
 public class PracticeForm {
 
@@ -49,6 +50,8 @@ public class PracticeForm {
             $ ("#subjectsInput").pressEnter();
             $("[for=\"hobbies-checkbox-2\"]").click();
             $("[for=\"hobbies-checkbox-3\"]").click();
+
+            $("#uploadPicture").uploadFile(new File("src/test/java/Tests/sova.jpg"));
 
             $("#currentAddress").setValue(currentAddress);
 

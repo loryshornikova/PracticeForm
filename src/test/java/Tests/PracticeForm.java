@@ -16,7 +16,7 @@ public class PracticeForm {
     String firstName = "Larysa";
     String lastName ="Shornikava";
     String email = "loryshornikova@gmail.com";
-    String mobileNumber = "1111111111111";
+    String mobileNumber = "1111111111";
     String currentAddress ="Homiel, Belarus";
         @BeforeAll
         static void setup() {
@@ -60,17 +60,17 @@ public class PracticeForm {
 
             $("#submit").click();
 
-            //$(".modal-body").shouldHave(
-                   // text (firstName + " " + lastName),
-                    //text(email),
-                    //text("Female"),
-                    //text(mobileNumber),
-                    //text("02 February,1984"),
-                    //text("English"),
-                    //text("Reading, Music"),
-                    //text(currentAddress),
-                    //text("NCR Delhi")
-            //);
+            $(".modal-body").shouldHave(
+                   text (firstName + " " + lastName),
+                    text(email),
+                    text("Female"),
+                    text(mobileNumber),
+                    text("02 February,1984"),
+                    text("English"),
+                    text("Reading, Music"),
+                    text(currentAddress),
+                    text("NCR Delhi")
+            );
 
 
             System.out.println("Successful test");

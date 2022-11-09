@@ -8,7 +8,7 @@ public class Main {
     int numberOfStudents = 16;
     String str2 = "persons";
 
-        System.out.println(str1 + nunberOfStudents + str2);
+        System.out.println(str1 + numberOfStudents + str2);
         
         int num1 = 8;
         int num2 = 2;

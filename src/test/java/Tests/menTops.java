@@ -3,6 +3,8 @@ package Tests;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -29,6 +31,10 @@ public class menTops {
         $(By.xpath("//*[@id=\"option-label-color-93-item-60\"]")).click();
         $(By.xpath("//button[@title='Add to Cart']")).click();
         $(By.xpath("/html/body/div[2]/header/div[2]/div[1]/a/span[2]/span[1]")).click();
+
+        $(By.xpath("//*[@id=\"ui-id-1\"]")).shouldHave(
+                text("1 Item In Cart")
+        );
 
 
 
